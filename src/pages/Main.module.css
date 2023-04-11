@@ -1,0 +1,25 @@
+.main{
+    background-color: #fff5f5;
+    padding-top: 100px;
+    overflow: hidden;
+}
+h1{
+    font-size: 2.8vw;
+    color: #E6A9A9;
+    padding-top: 100px;
+    font-style: italic;
+    letter-spacing: -0.055em;
+    font-weight: 900;
+}
+.introduce{
+    display: flex;
+    align-items: baseline;
+}
+.h1Container{
+    position: relative;
+    left: 280px;
+}
+.introduce p{
+    margin-left: 10px;
+    color: #EB9494;
+}

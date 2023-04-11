@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+.navBar {
+    width: 100vw;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    position: absolute;
+}
+.navBar li {
+    color: #fafafa;
+    margin: 30px;
+    font-size: 2vw;
+}
+.introduce{
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    top: 400px;
+}
+.introduce p{
+    color: #fff;
+    font-size: 2.8vw;
+    font-weight: 700;
+}
+.introduce img{
+    width: 4vw;
+}
