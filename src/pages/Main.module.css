@@ -4,22 +4,189 @@
     overflow: hidden;
 }
 h1{
-    font-size: 2.8vw;
+    font-size: 3.5vw;
     color: #E6A9A9;
     padding-top: 100px;
     font-style: italic;
     letter-spacing: -0.055em;
     font-weight: 900;
+    @media screen and (max-width:767px) {
+        font-size: 2em;
+    }
 }
 .introduce{
     display: flex;
+    justify-content: center;
     align-items: baseline;
+    position: relative;
+    @media screen and (min-width:1024px) {
+        right: 20%;
+}
 }
 .h1Container{
     position: relative;
-    left: 280px;
+    text-align: center;
+    margin-top: 250px;
+    @media screen and (min-width:1024px) {
+            right: 25%;
+    }
+}
+.introduceWrap{
+    @media screen and (min-width:768px) {
+        width: 62%;
+        position: relative;
+        top: 100px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        width: 80%;
+    }
+    @media screen and (max-width:767px) {
+        width: 90%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 100px;
+    }
 }
 .introduce p{
     margin-left: 10px;
     color: #EB9494;
+}
+.SwiperContainer{
+    @media screen and (max-width:767px) {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.IamContaiiner{
+    position: absolute;
+    left: 340px;
+    bottom: 0;
+    @media screen and (max-width:767px) {
+        width: 100%;
+        position: relative;
+        left: 0px;
+        text-align: center;
+        top: 30px;
+    }
+}
+.IamContaiiner h2{
+    font-size: 2vw;
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        font-size: 1.5em;
+    }
+    @media screen and (max-width:767px) {
+        font-size: 1em;
+    }
+}
+.IamContaiiner p{
+    font-size: 1.4vw;
+    line-height: 1.1em;
+    color: #706969;
+    margin-top: 10px;
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        font-size: 1em;
+    }
+    @media screen and (max-width:767px) {
+        font-size: 0.8em;
+    }
+}
+.pageImg{
+    width: 30vw;
+    object-fit: contain;
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        width: 40vw;
+    }
+}
+.pageContainer{
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        width: 80%;
+    }
+    @media screen and (max-width:767px) {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        top: 10px;
+        margin-top: 100px;
+    }
+}
+.pageContent{
+    position: relative;
+    margin-top: 50px;
+}
+.pageContent h2{
+    font-size: 2em;
+    font-weight: 800;
+    @media screen and (max-width:767px) {
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+.pageWrap{
+    margin-top: 25px;
+}
+.subContent{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #655f5f;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+.subContent2{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #655f5f;
+    @media screen and (max-width:767px) {
+        font-size: 1.2em;
+    }
+}
+.skill{
+    width: 7vw;
+}
+.skillContainer{
+    display: flex;
+    align-items: center;
+}
+.skillContainer2{
+    display: flex;
+    align-items: center;
+    @media screen and (max-width:767px) {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+.pageWrap div{
+    position: relative;
+    left: 50px;
+    bottom: 27px;
+    font-size: 1.2em;
+    letter-spacing: -0.075em;
+    color: #706969;
+    @media screen and (max-width:767px) {
+        left: 0;
+        text-align: center;
+        bottom: 4px;
+        font-size: 1em;
+    }
+}
+.wrapper{
+    height: 90vh;
 }

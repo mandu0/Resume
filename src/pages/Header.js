@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useRef} from "react";
 import mainImg from "../jpg/mainImg.jpg"
 import TabletMainImg from "../jpg/TabletMainImg.jpg"
 import pngwing12 from "../jpg/pngwing 12.png"
 import styles from "../pages/Header.module.css"
 import { useMediaQuery } from "react-responsive"; 
+import { Link } from "react-scroll"
 
 function Header() {
     const Pc = useMediaQuery({
@@ -18,9 +19,9 @@ function Header() {
     return(
         <header className={styles.header}>
             <nav className={styles.navBar}>
-            <li>About</li>
-            <li>Project</li>
-            <li>Contact</li>
+            <Link to="1" spy={true} smooth={true}><li>About</li></Link>
+            <Link to="2" spy={true} smooth={true}><li>Project</li></Link>
+            <Link to="3" spy={true} smooth={true}><li>Contact</li></Link>
             </nav>
             <div className={styles.introduce}>
                 <p>안녕하세요</p>
@@ -37,6 +38,7 @@ function Header() {
         </header>
     )
 }
+
 
 
 
