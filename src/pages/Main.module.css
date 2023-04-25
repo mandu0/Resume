@@ -100,7 +100,7 @@ h1{
     }
 }
 .pageImg{
-    width: 30vw;
+    width: 35vw;
     object-fit: contain;
     @media screen and (min-width:768px) and (max-width:1023px) {
         width: 40vw;
@@ -113,7 +113,7 @@ h1{
     margin-right: auto;
     display: flex;
     justify-content: space-around;
-    margin-top: 150px;
+    margin-top: 130px;
     @media screen and (min-width:768px) and (max-width:1023px) {
         width: 80%;
     }
@@ -128,12 +128,16 @@ h1{
     }
 }
 .pageContent{
+    opacity: 0;
     position: relative;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .pageContent h2{
     font-size: 2em;
     font-weight: 800;
+    @media screen and (max-width:1023px) {
+        font-size: 1.6em;
+    }
     @media screen and (max-width:767px) {
         text-align: center;
         font-size: 1.5em;
@@ -177,9 +181,12 @@ h1{
     position: relative;
     left: 50px;
     bottom: 27px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     letter-spacing: -0.075em;
     color: #706969;
+    @media screen and (max-width:1023px) {
+        font-size: 1em;
+    }
     @media screen and (max-width:767px) {
         left: 0;
         text-align: center;

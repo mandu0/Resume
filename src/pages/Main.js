@@ -13,11 +13,27 @@ import page1 from "../jpg/page1.jpg";
 import page2 from "../jpg/page2.jpg";
 import page3 from "../jpg/page3.png";
 import skill from "../jpg/skill.png";
+import { useRef, useState, useCallback } from "react";
 
 
 
 function Main() {
-   
+    const textObserve = useCallback((node) => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach(slide => {
+                if(slide.isIntersecting){
+                    console.log(slide)
+                    slide.target.style.opacity = 1;
+                    slide.target.style.transition = '1s';
+                }
+            })
+          },{threshold: 1,}
+        );
+    
+        observer.observe(node);
+
+      }, []);
     return(
         <main className={styles.main}>
             <section>
@@ -53,7 +69,8 @@ function Main() {
                 <article>
                     <div>
                         <div className={styles.pageContainer}>
-                            <a><img className={styles.pageImg} src={page1}/></a>                            <div className={styles.pageContent}>
+                            <a target="_blank" href="https://calm-faloodeh-920061.netlify.app/"><img className={styles.pageImg} src={page1}/></a>                           
+                             <div ref={textObserve} className={styles.pageContent}>
                                 <h2>COVID_19 국내 발생현황</h2>
                                 <div className={styles.pageWrap}>
                                     <p className={styles.subContent}>내용</p>
@@ -77,8 +94,8 @@ function Main() {
                 <article>
                     <div>
                         <div className={styles.pageContainer}>
-                            <a href=""><img className={styles.pageImg} src={page2}/></a>
-                            <div className={styles.pageContent}>
+                            <a target="_blank" href="https://radiant-cascaron-4dde14.netlify.app/"><img className={styles.pageImg} src={page2}/></a>
+                            <div ref={textObserve} className={styles.pageContent}>
                                 <h2>2022 인천시장선거 후보 홈페이지</h2>
                                 <div className={styles.pageWrap}>
                                     <p className={styles.subContent}>내용</p>
@@ -101,7 +118,7 @@ function Main() {
                     <div className={styles.wrapper}>
                         <div className={styles.pageContainer}>
                             <a target="_blanck" href="http://xn--939a1gs0ao4n6tm86qgodr19a.com/main/main.asp"><img className={styles.pageImg} src={page3}/></a>
-                            <div className={styles.pageContent}>
+                            <div ref={textObserve} className={styles.pageContent}>
                                 <h2>국민건강진흥재단</h2>
                                 <div className={styles.pageWrap}>
                                     <p className={styles.subContent}>내용</p>
