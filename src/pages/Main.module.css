@@ -163,7 +163,10 @@ h1{
     }
 }
 .skill{
-    width: 7vw;
+    width: 8vw;
+}
+.skill2{
+    width: 12vw;
 }
 .skillContainer{
     display: flex;
