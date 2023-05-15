@@ -151,6 +151,7 @@ h1{
     font-weight: 700;
     color: #655f5f;
     @media screen and (max-width:767px) {
+        font-size: 0em;
         display: none;
     }
 }
