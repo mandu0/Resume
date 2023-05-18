@@ -156,12 +156,9 @@ h1{
     }
 }
 .subContent2{
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 700;
     color: #655f5f;
-    @media screen and (max-width:767px) {
-        font-size: 1.2em;
-    }
 }
 .skill{
     width: 8vw;
